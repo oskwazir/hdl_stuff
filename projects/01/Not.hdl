@@ -8,10 +8,17 @@
  * out = not in
  */
 
+/**
+* Solution: Send input to Nand gate.
+* Nand(0,0) = 1;
+* Nand(1,1) = 0;
+* Basically just want to flip the bits.
+*/
+
 CHIP Not {
     IN in;
     OUT out;
 
     PARTS:
-    // Put your code here:
+    Nand(a=in,b=in,out=out);
 }
